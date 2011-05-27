@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link href="test.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript">
+        function onLoad() {
+            document.addEventListener("deviceready", onDeviceReady, false);
+        }
+
+        function onDeviceReady()
+        {
+            //
+        }
+
+        </script>
+        <script type="text/javascript" src="phonegap.js"></script>
+        <style>
+            .headTest
+            {
+                font-weight: bold;
+                font-size: 14px;
+                font-family: arial;
+                color: blue;
+            }
+
+            DIV
+            {
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body onload="onLoad();">
+        <div class="headExternalTest">testing with external css file test.css</div>
+        <div class="headTest">testing with css in head</div>
+        <div style="color: yellow;font-weight: bold; font-size: 14px; font-family: arial;">Testing inline css</div>
+        <div><a href="#" onclick="navigator.notification.alert('Testing', 'test', 'haha');">Test PhonGap API</a></div>
+    </body>
+</html>
